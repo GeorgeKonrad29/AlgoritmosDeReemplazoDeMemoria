@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Replacement Algorithms</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Replacement Algorithms</h1>
+        <div>
+            <label for="algorithm-select">Select Algorithm:</label>
+            <select id="algorithm-select">
+                <option value="fifo">FIFO</option>
+                <option value="fifo-plus">FIFO+</option>
+                <option value="lru">LRU</option>
+                <option value="optimal">Optimal</option>
+            </select>
+        </div>
+        <div>
+            <label for="reference-string">Reference String:</label>
+            <input type="text" id="reference-string" placeholder="Enter reference string">
+        </div>
+        <div>
+            <label for="num-frames">Number of Frames:</label>
+            <input type="number" id="num-frames" value="3" min="1">
+        </div>
+        <button id="run-algorithm">Run Algorithm</button>
+        <div id="result"></div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
