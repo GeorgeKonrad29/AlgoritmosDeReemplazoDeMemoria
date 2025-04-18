@@ -1,4 +1,4 @@
-function fifo(referenceString, numFrames) {
+export function fifo(referenceString, numFrames) {
     let pageFaults = 0;
     let memory = [];
     let pageQueue = [];

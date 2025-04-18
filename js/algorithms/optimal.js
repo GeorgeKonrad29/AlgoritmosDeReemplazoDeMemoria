@@ -1,4 +1,4 @@
-function optimal(referenceString, frames) {
+export function optimal(referenceString, frames) {
     let pageFaults = 0;
     let memory = [];
     

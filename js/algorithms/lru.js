@@ -1,4 +1,4 @@
-function lru(referenceString, numFrames) {
+export function lru(referenceString, numFrames) {
     let pageFaults = 0;
     let memory = [];
     let pageIndex = {};

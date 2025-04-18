@@ -1,4 +1,4 @@
-function fifoPlus(referenceString, frameCount) {
+export function fifoPlus(referenceString, frameCount) {
     const frames = [];
     const pageFaults = [];
     const pageCount = {};

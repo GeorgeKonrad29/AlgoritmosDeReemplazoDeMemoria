@@ -22,7 +22,7 @@ document.getElementById('algorithm-selector').addEventListener('change', (event)
 document.getElementById('run-button').addEventListener('click', () => {
     const referenceString = document.getElementById('reference-string').value.split(',').map(Number);
     const frames = parseInt(document.getElementById('frame-count').value);
-    const result = algorithms[currentAlgorithm](referenceString, frames);
+    const result = "hola"//algorithms[currentAlgorithm](referenceString, frames);
     displayResult(result);
 });
 
@@ -33,5 +33,5 @@ function updateDisplay() {
 
 function displayResult(result) {
     const resultArea = document.getElementById('result');
-    resultArea.innerHTML = `Pages in memory: ${result.join(', ')}`;
+    resultArea.innerHTML = `Pages in memory: `;
 }
