@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Memory Replacement Algorithms</h1>
         <div>
-            <label for="algorithm-select">Select Algorithm:</label>
+            <label for="algorithm-selector">Select Algorithm:</label>
             <select id="algorithm-selector">
                 <option value="fifo">FIFO</option>
                 <option value="fifo-plus">FIFO+</option>
@@ -18,16 +18,30 @@
                 <option value="optimal">Optimal</option>
             </select>
         </div>
+        
         <div>
-            <label for="reference-string">Reference String:</label>
-            <input type="text" id="reference-string" placeholder="Enter reference string">
-        </div>
-        <div>
-            <label for="num-frames">Number of Frames:</label>
+            <label for="frame-count">Number of Frames:</label>
             <input type="number" id="frame-count" value="3" min="1">
         </div>
-        <button id="run-button">Run Algorithm</button>
-        <div id="result"></div>
+        <div class="nonGuessingAlgorithms">
+            <div>
+                <label for="NuevoProceso">Nuevo proceso:</label>
+                <input type="text" id="NuevoProceso" placeholder="Ingrese el nombre del nuevo proceso">
+            </div>
+            <button id="run-button">Run Algorithm</button>
+            <div id="result"></div>
+        </div>
+        <div class="guessingAlgorithms">
+            <div>
+                <label for="reference-string">Reference String:</label>
+                <input type="text" id="reference-string" placeholder="Enter reference string">
+            </div>
+            <button id="run-button">Run Algorithm</button>
+            <div id="result"></div>
+        </div>    
+    </div>
+    <div id="visualizations">
+        <button id="add-visualization" style="margin-bottom: 20px;">Agregar Visualización</button>
     </div>
     <script type="module" src="./js/app.js"></script>
 </body>
